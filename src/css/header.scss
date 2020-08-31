@@ -1,0 +1,147 @@
+.header {
+    overflow: hidden;
+    &__text-wrapper {
+        max-width: 964px;
+        height: 471px;
+        margin: 173px auto 0px;
+        padding: 73px 20px 10px;
+        overflow: hidden;
+
+        background-image: url('../img/border.png');
+        background-size: 100% 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    &__top-text {
+        position: relative;
+        margin: 0px;
+        text-align: center;
+        font-family: 'raleway';
+        color: #fff;
+        font-size: 24px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+
+    &__top-text::after {
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: #fff;
+        width: 91px;
+        height: 3px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    &__main-text {
+        margin: 41px 0px 0px;
+        font-family: 'droid';
+        font-size: 185.21px;
+        line-height: 115.75px;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__description {
+        margin: 43px 0px 0px;
+        text-align: center;
+        font-family: 'raleway';
+        font-size: 24px;
+        font-weight: bold;
+        color: #ac752f;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .header {
+        &__text-wrapper {
+            height: auto;
+            background-image: none;
+            margin: 70px auto 0px;
+            padding: 60px 20px 10px;
+            border: 10px solid #ac752f;
+        }
+
+        &__top-text {
+            font-size: 3vw;
+        }
+    }
+} 
+
+@media screen and (max-width:992px) {
+    .header {
+        &__text-wrapper {
+            margin: 70px auto 0px;
+            padding: 60px 20px 10px;
+            border: 10px solid #ac752f;
+        }
+    
+        &__main-text {
+            font-size: 21vw;
+        }
+    
+        &__description {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+
+        &__text-wrapper {
+            width: 100%;
+            margin: 0px auto 0px;
+            padding: 30px 15px 10px;
+            border: 10px solid #ac752f;
+        }
+
+        &__top-text {
+            font-size: 4vw;
+        }
+    
+        &__main-text {
+
+            margin: 20px 0px 0px;
+        }
+    
+        &__description {
+            margin: 23px 0px 0px;
+            line-height: 25px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+    .header {
+        &__text-wrapper {
+            padding: 0px 15px 10px;
+            border: 5px solid #ac752f;
+        }
+
+        &__top-text {
+            font-size: 5vw;
+        }
+    
+        &__main-text {
+            margin: 5px 0px 0px;
+        }
+    
+        &__description {
+            margin: 0px 0px 0px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}
