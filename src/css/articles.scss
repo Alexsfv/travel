@@ -92,7 +92,7 @@
         position: absolute;
         display: block;
         width: 120px;
-        margin: 27px 0 0;
+        margin: 28px 0 0;
         font-family: 'raleway';
         text-decoration: none;
         text-transform: uppercase;
@@ -134,7 +134,7 @@
 
 @media screen and (max-width:576px) {
     .articles {
-        padding: 130px 0 200px;
+        padding: 130px 0 100px;
 
         &__title {
             margin-left: 0;
