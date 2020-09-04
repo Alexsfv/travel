@@ -1,0 +1,192 @@
+.contact {
+
+    &__wrapper {
+        position: relative;
+        max-width: 1302px;
+        min-height: 558px;
+        margin: 213px 38px 107px 30px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #373737;
+    }
+
+    &__content {
+        max-width: 475px;
+        margin: 0 62px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    &__title {
+        position: relative;
+        margin: 50px 4px 10px;
+        font-family: 'droid';
+        font-size: 60px;
+        line-height: 82px;
+        color: #ad7835;
+    }
+
+    &__title::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 91px;
+        height: 3px;
+        background-color: #ad7835;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__name-field, &__tel-field, &__message-field {
+        color: #ffffff;
+        font-family: 'raleway-reg';
+        font-size: 16px;
+        line-height: 28px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #737373;
+    }
+
+    &__name-field:focus, &__tel-field:focus, &__message-field:focus {
+        outline: 1px dashed #ad7835;
+    }
+
+    &__name-field::placeholder, &__tel-field::placeholder, &__message-field::placeholder {
+        color: #ffffff;
+        font-family: 'raleway-reg';
+        font-size: 16px;
+    }
+
+    &__name-field{
+        max-width: 48%;
+        width: 45%;
+        margin: 47px 0 0 5px;
+        padding: 0px 8px 10px;
+    }
+
+    &__tel-field {
+        max-width: 48%;
+        width: 45%;
+        margin: 47px 0 0 5px;
+        padding: 0px 8px 10px;
+    }
+
+    &__message-field {
+        max-width: 475px;
+        max-height: 150px;
+        width: 100%;
+        height: 100px;
+        margin: 44px 0 0 5px;
+        padding: 0px 8px 10px;
+        resize: vertical
+    }
+
+    &__send-form {
+        width: 180px;
+        height: 57px;
+        margin: 71px 0px 0 4px;
+        text-align-last: center;
+        color: #ad7835;
+        font-family: 'raleway';
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 51px;
+        border: 1px solid #ad7835;
+    }
+
+    &__img {
+        position: absolute;
+        max-width: 900px;
+        max-height: 700px;
+        left: 5.25%;
+        top: calc(50% + 2px);
+        transform: translateY(-50%);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    .contact { 
+        &__wrapper {
+            margin: 213px auto 107px;
+            background-image: url('../img/letter.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top left;
+        }
+        
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:1090px) {
+    .contact { 
+
+        &__wrapper {
+            background-size: cover;
+        }
+
+        &__content {
+            position: relative;
+            z-index: 5;
+            margin: 0 auto 0;
+            padding: 0 15px;
+            max-width: 700px;
+        }
+
+        &__wrapper::before {
+            position: absolute;
+            z-index: 1;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(32, 32, 32, 0.685);
+        }
+
+        &__message-field {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__send-form {
+            margin-left: auto;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .contact { 
+
+        &__wrapper {
+            background-position: center center;
+        }
+
+        &__name-field, &__tel-field {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__send-form {
+            margin: 71px 0 35px auto;
+        }
+    }
+}
