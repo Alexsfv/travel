@@ -1,0 +1,26 @@
+.social {
+    margin: 227px 0 100px;
+
+    &__link-line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        width: 80px;
+        height: 80px;
+        margin: 15px;
+        border: 1px solid #ad7835;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    &__link:hover {
+        background-color: #ad793528;
+    }
+}
