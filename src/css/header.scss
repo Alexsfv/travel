@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1400px) {
     .header {
         &__text-wrapper {
             height: auto;
@@ -67,7 +67,11 @@
             padding: 60px 20px 10px;
             border: 10px solid #ac752f;
         }
+    }
+} 
 
+@media screen and (max-width:1200px) {
+    .header {
         &__top-text {
             font-size: 3vw;
         }

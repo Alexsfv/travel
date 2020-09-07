@@ -1,12 +1,12 @@
 .articles {
-    padding: 272px 0 200px;
+    padding: 222px 0 200px;
 
     &__title-wrapper {
         text-align: center;
     }
 
     &__title {
-        display: inline;
+        display: inline-block;
         position: relative;
         margin-left: 5px;
         font-family: 'droid';
@@ -23,8 +23,8 @@
         width: 90px;
         height: 3px;
         background-color: #ad7835;
-        bottom: -8px;
-        left: 0;
+        bottom: -2px;
+        left: 1px;
     }
 
     &__items-line {
@@ -36,11 +36,11 @@
 
     &__item {
         max-width: 370px;
-        margin: 93px 28px 20px;
+        margin: 43px 28px 20px;
     }
 
     &__item_offset {
-        margin-top: 179px;
+        margin-top: 129px;
     }
 
     &__img {

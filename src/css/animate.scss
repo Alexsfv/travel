@@ -1,0 +1,144 @@
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate_fadeInLeft_active {
+    animation-name: fadeInLeft;
+    animation-duration: 2.3s;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+  
+.animate_fadeInRight_active {
+    animation-name: fadeInRight;
+    animation-duration: 2.3s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate_fadeInUp_active {
+    animation-name: fadeInUp;
+    animation-duration: 2.3s;
+}
+
+.animate_fadeInUp_1s_active {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+.animate_fadeInUp_3s_active {
+    animation-name: fadeInUp;
+    animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+  
+.animate_fadeIn_active {
+    animation-name: fadeIn;
+}
+
+.animate_fadeIn_1s_active {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.animate_fadeIn_2s_active {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.animate_fadeIn_3s_active {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+.animate_fadeIn_4s_active {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+.animate_fadeIn_5s_active {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+}
+  
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate_fadeInDown_active {
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+}
+  
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate_jackInTheBox_active {
+    animation-name: jackInTheBox;
+    animation-duration: 1s;
+}
+  
+  
