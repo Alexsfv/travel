@@ -122,6 +122,10 @@
 @media screen and (max-width:1308px) {
     .articles {
 
+        &__title-wrapper {
+            overflow: hidden;
+        }
+
         &__items-line {
             justify-content: space-around;
         }
@@ -140,7 +144,6 @@
             margin-left: 0;
             font-size: 11vw;
             line-height: 81.3px;
-
         }
 
         &__item {

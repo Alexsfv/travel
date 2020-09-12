@@ -44,6 +44,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        overflow: hidden;
     }
 
     &__name-field, &__tel-field, &__message-field {

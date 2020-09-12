@@ -96,7 +96,7 @@
             setTimeout(() => {
                 coolDown = false;
                 refreshStateBlocks(blocksObj);
-            }, 250);
+            }, 0);
         }
     };
 

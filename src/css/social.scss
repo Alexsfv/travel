@@ -3,6 +3,7 @@
 
     &__link-line {
         display: flex;
+        overflow: hidden;
         flex-wrap: wrap;
         justify-content: center;
     }

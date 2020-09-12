@@ -29,7 +29,8 @@
   
 .animate_fadeInRight_active {
     animation-name: fadeInRight;
-    animation-duration: 2.3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInUp {
@@ -119,7 +120,7 @@
     from {
         opacity: 0;
         transform: scale(0.1) rotate(30deg);
-        transform-origin: center bottom;
+        // transform-origin: center bottom;
     }
 
     50% {
@@ -138,7 +139,7 @@
 
 .animate_jackInTheBox_active {
     animation-name: jackInTheBox;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
   
   
